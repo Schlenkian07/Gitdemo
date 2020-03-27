@@ -1,4 +1,11 @@
 node{
 
   stage('SCM checkout'){
-    git 
+    git 'https://github.com/Schlenkian07/Gitdemo'
+  }
+  
+  stage('Compile-package'){
+    sh 'mvn package'
+  }
+  
+}
